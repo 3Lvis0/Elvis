@@ -1,0 +1,8 @@
+{
+  "label": "Administration Système",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Gestion et maintenance des systèmes Linux"
+  }
+} 

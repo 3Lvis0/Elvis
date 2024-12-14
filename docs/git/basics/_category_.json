@@ -1,0 +1,8 @@
+{
+  "label": "Les Bases de Git",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Premiers pas avec Git et le contrôle de version"
+  }
+} 

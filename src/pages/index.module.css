@@ -1,0 +1,113 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background: transparent;
+  z-index: 1;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.categoryCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.1),
+    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.categoryCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 
+    0 0 30px rgba(0, 255, 255, 0.2),
+    inset 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+.cardLink {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.cardDescription {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animation des étoiles */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 12px rgba(238, 130, 238, 0.8),
+    0 0 16px rgba(147, 112, 219, 0.6);
+  animation: starTwinkle var(--twinkle-duration) infinite;
+}
+
+@keyframes starTwinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
