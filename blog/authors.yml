@@ -21,3 +21,11 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+3lvis0:
+  name: Elvis  # Votre nom
+  title: DevOps Engineer # Votre titre/rôle
+  url: https://github.com/3Lvis0
+  image_url: https://github.com/3Lvis0.png
+  socials:
+    github: 3Lvis0

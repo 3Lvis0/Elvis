@@ -1,7 +1,7 @@
 ---
 slug: introduction-devops
 title: Introduction aux Pratiques DevOps
-authors: [votre-nom]
+authors: ['3lvis0']
 tags: [devops, automation, best-practices]
 ---
 
